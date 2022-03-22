@@ -11,7 +11,7 @@ from tensorflow.keras.preprocessing.sequence import TimeseriesGenerator
 
 class DataGenerator(Sequence):
     
-    def __init__(self, x_path, y_path = None, to_fit = True,  seq_len = 1, batch_size = 5):
+    def __init__(self, x_path, y_path = None, to_fit = True,  seq_len = 3, batch_size = 5):
         gc.collect()
         self.x_path = x_path        
         self.batch_size = batch_size
